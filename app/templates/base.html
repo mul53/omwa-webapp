@@ -1,0 +1,258 @@
+<html>
+<title>Homepage</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<body>
+  <div class="main">
+
+    <div id="header-wrapper">
+
+      <div id="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 top-bar-numbers">
+              <p>
+                <span class="sales-link">Sales <a href="tel:+260974647321">260974647321</a></span>
+                <span class="support-link">Support <a href="tel:+260974647321">260974647321</a></span>
+              </p>
+            </div>
+            <div class="col-md-6 top-bar-buttons">
+              <p>
+                <span class="button"><a>Customer Support</a></span>
+                <span id="make-enquiry" class="button expert-button"><a>Make an Enquiry</a></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="logo">
+              </div>
+            </div>
+            <div class="col-md-9">
+              <ul>
+                <li class="drop"><a>Printers</a>
+                  <div class="dropdown">
+                    <ul>
+                      <p class="header">Brands</p>
+                      <p class="sub-header">HP</p>
+                      <li><a>HP PageWide Printer</a></li>
+                      <li><a>Riso</a></li>
+                      <p class="sub-header">Riso</p>
+                      <li><a>ComColor</a></li>
+                      <li><a>Risograph</a></li>
+                      <li><a>Inks and Consumables</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="drop">
+                  <a>Photocopiers</a>
+                  <div class="dropdown">
+                    <ul>
+                      <p class="header">Brands</p>
+                      <li><a>HP</a></li>
+                      <li><a>Toshiba</a></li>
+                      <li><a>Riso</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="normal-link"><a>About</a></li>
+                <li class="normal-link"><a>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    {% block body %}{% endblock %}
+
+    <div id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-logo">
+                <p>LOGO</p>
+              </div>
+              <div class="footer-slogan">
+                <p>Slogan goes here</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer-contact">
+                <p>Sales<br> <a href="tel:+260974647321">260974647321</a></p>
+                <p>Support<br> <a href="tel:+260974647321">260974647321</a></p>
+                <p>Email<br> <a href="tel:+260974647321">example@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="quick-links">
+                <p>Products</p>
+                <ul>
+                  <li><a href="">Riso</a></li>
+                  <li><a href="">Toshiba</a></li>
+                  <li><a href="">Hp</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="legal">
+            <p>2017 Omwa EnterpriseLtd. | Terms and Conditions | Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+
+    // Google maps API key =  AIzaSyDnEZegq0AMw6tCCqPv3G4Yiq91MS8HqlA
+    // Google maps JavaScript Api Key =  AIzaSyBQCz9LED39pKcRb8TA6Chy-LiRFMBs1CQ
+    function initMap() {
+      var styledMapType = new google.maps.StyledMapType(
+              [
+                {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
+                {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
+                {elementType: 'labels.text.stroke', stylers: [{color: '#f5f1e6'}]},
+                {
+                  featureType: 'administrative',
+                  elementType: 'geometry.stroke',
+                  stylers: [{color: '#c9b2a6'}]
+                },
+                {
+                  featureType: 'administrative.land_parcel',
+                  elementType: 'geometry.stroke',
+                  stylers: [{color: '#dcd2be'}]
+                },
+                {
+                  featureType: 'administrative.land_parcel',
+                  elementType: 'labels.text.fill',
+                  stylers: [{color: '#ae9e90'}]
+                },
+                {
+                  featureType: 'landscape.natural',
+                  elementType: 'geometry',
+                  stylers: [{color: '#dfd2ae'}]
+                },
+                {
+                  featureType: 'poi',
+                  elementType: 'geometry',
+                  stylers: [{color: '#dfd2ae'}]
+                },
+                {
+                  featureType: 'poi',
+                  elementType: 'labels.text.fill',
+                  stylers: [{color: '#93817c'}]
+                },
+                {
+                  featureType: 'poi.park',
+                  elementType: 'geometry.fill',
+                  stylers: [{color: '#a5b076'}]
+                },
+                {
+                  featureType: 'poi.park',
+                  elementType: 'labels.text.fill',
+                  stylers: [{color: '#447530'}]
+                },
+                {
+                  featureType: 'road',
+                  elementType: 'geometry',
+                  stylers: [{color: '#f5f1e6'}]
+                },
+                {
+                  featureType: 'road.arterial',
+                  elementType: 'geometry',
+                  stylers: [{color: '#fdfcf8'}]
+                },
+                {
+                  featureType: 'road.highway',
+                  elementType: 'geometry',
+                  stylers: [{color: '#f8c967'}]
+                },
+                {
+                  featureType: 'road.highway',
+                  elementType: 'geometry.stroke',
+                  stylers: [{color: '#e9bc62'}]
+                },
+                {
+                  featureType: 'road.highway.controlled_access',
+                  elementType: 'geometry',
+                  stylers: [{color: '#e98d58'}]
+                },
+                {
+                  featureType: 'road.highway.controlled_access',
+                  elementType: 'geometry.stroke',
+                  stylers: [{color: '#db8555'}]
+                },
+                {
+                  featureType: 'road.local',
+                  elementType: 'labels.text.fill',
+                  stylers: [{color: '#806b63'}]
+                },
+                {
+                  featureType: 'transit.line',
+                  elementType: 'geometry',
+                  stylers: [{color: '#dfd2ae'}]
+                },
+                {
+                  featureType: 'transit.line',
+                  elementType: 'labels.text.fill',
+                  stylers: [{color: '#8f7d77'}]
+                },
+                {
+                  featureType: 'transit.line',
+                  elementType: 'labels.text.stroke',
+                  stylers: [{color: '#ebe3cd'}]
+                },
+                {
+                  featureType: 'transit.station',
+                  elementType: 'geometry',
+                  stylers: [{color: '#dfd2ae'}]
+                },
+                {
+                  featureType: 'water',
+                  elementType: 'geometry.fill',
+                  stylers: [{color: '#b9d3c2'}]
+                },
+                {
+                  featureType: 'water',
+                  elementType: 'labels.text.fill',
+                  stylers: [{color: '#92998d'}]
+                }
+              ],
+              {name: 'Styled Map'});
+
+
+      var uluru = {lat: -13.1299866, lng: 28.4193587};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 18,
+        center: uluru,
+        mapTypeControlOptions: {
+          mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                  'styled_map']
+        }
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+      map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+
+
+    }
+  </script>
+  <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBQCz9LED39pKcRb8TA6Chy-LiRFMBs1CQ&callback=initMap"></script>
+
+</body>
+</html>
