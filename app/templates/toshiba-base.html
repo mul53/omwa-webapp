@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="main">
+      <div class="banner">
+        <div class="container">
+          <p class="custom-breadcrumb">Printers / Toshiba Printers</p>
+          <p class="header">Toshiba Printers</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="product-info">
+
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item active">
+                    <a class="nav-link active" href="#overview" role="tab" data-toggle="tab">Overview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">Toshiba Printers</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="overview">
+                    <p class="tab-header">Toshiba Printers</p>
+                    <div class="styled-content">
+                      <p><img src="{{ url_for('static', filename = 'images/Toshiba-Logo.jpg') }}">Midshire is proud to be
+                         Europe’s and the world’s largest supplier of RISO
+                         printers, with our team supplying, installing and
+                         maintaining the entire range of RISO printers and
+                         genuine consumables.</p>
+
+                      <p>RISO devices are the fastest available, allowing
+                        you to meet your print-run timescales better than
+                        anything else in the marketplace at present.
+                        Combine this with the extensive portfolio of RISO
+                        printers we have available and you can be sure we can
+                        keep you at the forefront of affordable printing. RISO
+                        are renowned for their efficient, low-cost, high-volume
+                        print solutions, allowing you to make
+                        impressive savings.</p>
+
+                      <p>There is a large range of RISO printers to
+                          suit all manner of business type. The RISO ComColor
+                         is the closest device to a traditional photocopier,
+                         in contrast the RISO Duplicator
+                         (also known as a Risograph) is a more refined printer,
+                         offering high-speed one and two colour printing, similar
+                         to the results of lithographic or offset printing.</p>
+                    </div>
+                    <hr>
+                    <p class="tab-header">RISO ComColor</p>
+                    <div class="styled-content">
+                      <p>The RISO ComColor range of printers is built on inkjet technology. 150 pages per minute, it is the world’s fastest
+                         printer of its kind, printing 1,000 A4
+                         sheets in approximately 6 minutes and<img src="images/RISO-ComColor.jpg">
+                         30 seconds. To put this into comparison, a conventional
+                        office printer would take around 25 minutes to print 1,000
+                        sheets!</p>
+
+                      <p>The ComColor range is incredibly energy efficient, as
+                         unlike photocopiers, they do not use heat during the
+                          printing process. Instead, the ink is sprayed onto the
+                         page using a large number of nozzles. This not only reduces
+                         the energy used in the process but reduces maintenance
+                          issues caused by parts wearing, as no heat is used.</p>
+
+                     <p>RISO recently introduced their new range of ComColor
+                        devices – the FW range, which is a more compact and
+                        advanced version of the ComColor X1 series.<p/>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="buzz">
+                    <p class="tab-header">RISO ComColor<img src="{{ url_for('static', filename = 'images/Toshiba-Logo.jpg') }}"/></p>
+                    <ul class="tab-list">
+                      <li>RISO FW5230</li>
+                      <li>RISO FW5000</li>
+                      <li>RISO FW5000</li>
+                      <li>RISO FW5000</li>
+                    </ul>
+                      <hr>
+                      <p class="tab-header">RISO Duplicators / Risographs</p>
+                      <ul class="tab-list">
+                        <li>RISO FW5000</li>
+                        <li>RISO FW5000</li>
+                        <li>RISO FW5000</li>
+                        <li>RISO FW5000</li>
+                      </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
