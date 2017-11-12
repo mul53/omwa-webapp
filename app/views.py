@@ -6,3 +6,8 @@ from flask import render_template
 @app.route('/index')
 def index():
     return render_template("index.html")
+
+
+@app.route('/index/printers/riso')
+def printersRiso():
+    return 'Printers Riso Page'

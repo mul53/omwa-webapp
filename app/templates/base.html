@@ -2,8 +2,8 @@
 <title>Homepage</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 <body>
   <div class="main">
@@ -112,8 +112,8 @@
 
   </div>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
   <script>
 
     // Google maps API key =  AIzaSyDnEZegq0AMw6tCCqPv3G4Yiq91MS8HqlA
