@@ -3,6 +3,10 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.alignright {
+	float: right;
+}
+
 #top-bar {
 	font-size: 16px;
 	background: #F5F5F5;

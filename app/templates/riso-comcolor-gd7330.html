@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="main">
+      <div class="banner">
+        <div class="container">
+          <p class="custom-breadcrumb">Printers / Toshiba Printers</p>
+          <p class="header">Toshiba Printers</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="product-info">
+
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item active">
+                    <a class="nav-link active" href="#overview" role="tab" data-toggle="tab">Product Overview</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="overview">
+                    <p class="tab-header">RISO ComColor GD7330</p>
+                    <div class="styled-content">
+                      <p><img src="{{ url_for('static', filename = 'images/RISO-Logo.jpg') }}">
+                       The RISO ComColor GD7330 is a 120ppm device that forms part of the new flagship range of RISO ComColor devices.</p>
+
+                      <p>ComColor GD7330 is the right choice for companies that require high-speed printing, but don’t want to spend a fortune. This cost-efficient, ultra-fast colour printer can be used with a variety of optional post- printing accessories for a reliable in-house print solution.</p>
+
+                      <p>To minimise ink consumption and maintain optimal print quality, RISO’s standard colour profile intelligently controls the quantity of ink drops used for each individual colour, according to the paper type, to effectively reproduce the original image.</p>
+
+                      <p>When printing or copying, the ComColor GD7330 can automatically omit blank pages in documents, saving both time and paper. You can combine multiple copies of the same page or multiple sheets on a single printed page to save paper. This conveniently condenses bulky, multi-page documents in to an easy to read format.</p>
+                    </div>
+                    <hr>
+                    <p class="tab-header">Features and Benefits of the RISO ComColor GD7330</p>
+                    <div class="styled-content">
+                      <p>
+                        <a href="https://www.midshire.co.uk/wp-content/uploads/2017/03/RISO-FW5230-ComColor.jpg">
+                        <img class="alignright" src="{{ url_for('static', filename = 'images/RISO-GD7330-ComColor-267x300.jpg') }}">
+                      </a>
+                        • Scan to email and USB
+                        <br>
+                        • Perfect for reprographic departments, schools and production printers
+                        <br>
+                        • Energy efficient print solution
+                        <br>
+                        • 2,500 sheet standard capacity, for long uninterrupted runs
+                        <br>
+                        • Low cost, high volume print solution
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

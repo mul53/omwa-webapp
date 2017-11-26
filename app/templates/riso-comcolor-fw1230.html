@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="main">
+      <div class="banner">
+        <div class="container">
+          <p class="custom-breadcrumb">Printers / Toshiba Printers</p>
+          <p class="header">Toshiba Printers</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="product-info">
+
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item active">
+                    <a class="nav-link active" href="#overview" role="tab" data-toggle="tab">Product Overview</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="overview">
+                    <p class="tab-header">RISO ComColor FW1230</p>
+                    <div class="styled-content">
+                      <p><img src="{{ url_for('static', filename = 'images/RISO-Logo.jpg') }}">
+                       The RISO ComColor Black FW 1230 is a mono device that forms part of the latest ComColor
+                       range of printers from RISO. With fast speeds of 120 ppm in black and white, the ComColor
+                       black FW1230 significantly quickens high volume print jobs.</p>
+
+                      <p>ComColor black FW1230 is the right choice for low-cost, high-speed printing. This cost-efficient,
+                         ultra-fast black and white printer can be used with a variety of optional post- printing
+                         accessories for a reliable in-house print solution.</p>
+
+                      <p>An easy-to-view touch panel with colour icons makes operation simple for anyone.
+                        The tiltable panel ensures excellent viewing at any angle up to 90 degrees. Scan
+                        preview windows show scanned images before saving data, ensuring less scan failures.
+                        For added convenience when printing and copying, frequently used functions can be saved
+                         as Favourites.</p>
+                    </div>
+                    <hr>
+                    <p class="tab-header">Features and Benefits of the RISO ComColor FW1230</p>
+                    <div class="styled-content">
+                      <p>
+                        <a href="https://www.midshire.co.uk/wp-content/uploads/2017/03/RISO-FW5230-ComColor.jpg">
+                          <img class="alignright size-medium wp-image-19737" src="{{ url_for('static', filename = 'images/riso-comcolor-black-fw-1230.jpg') }}">
+                        </a>
+                        • Mono inkjet printer
+                        <br>
+                        • Up to 120 pages per minute
+                        <br>
+                        • Print up-to 210gsm paper
+                        <br>
+                        • Three paper trays as standard
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

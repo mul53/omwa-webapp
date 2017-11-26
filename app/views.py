@@ -21,3 +21,15 @@ def printersToshiba():
 @app.route('/printers/riso/comcolor/fw5230')
 def risofw5230():
     return render_template("riso-comcolor-fw5230.html")
+
+@app.route('/printers/riso/comcolor/fw1230')
+def risofw1230():
+    return render_template("riso-comcolor-fw1230.html")
+
+@app.route('/printers/riso/comcolor/gd7330')
+def risogd7330():
+    return render_template("riso-comcolor-gd7330.html")
+
+@app.route('/printers/riso/comcolor/gd9630')
+def risogd9630():
+    return render_template("riso-comcolor-gd9630.html")
